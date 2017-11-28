@@ -1,0 +1,17 @@
+h1 {
+  color: #444444;
+  font-size: 26px;
+}
+
+div {
+  font-size: 18px;
+  padding: 10px;
+  color: #444444;
+}
+button {
+  margin: 8px;
+  background-color: darkgray;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+}
