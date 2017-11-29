@@ -22,7 +22,7 @@ class App extends React.Component {
     };
   }
 
-  addTodo(val){
+  addTodo = (val) => {
     const todo = {
       text: val,
       id: uuid.v4(),
@@ -40,7 +40,9 @@ class App extends React.Component {
     return (
       <div className={style.TodoApp}>
         <Title listCount={this.state.data.length}/>
-        <TodoForm />
+        <TodoForm
+          addTodo={this.addTodo}
+        />
         <TodoList
           listItems={this.state.data}
           onTodoRemoveClick={this.removeTodo}
